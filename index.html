@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Login Form</title>
+  </head>
+  <body>
+    <!-- The login form -->
+    <div class="container">
+      <form action="dashboard.html" method="POST" class="login-email">
+        <p class="login-text" style="font-size: 2rem; font-weight: 800;">
+          Login
+        </p>
+        <div class="input-group">
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            value=""
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            class="input"
+            type="password"
+            placeholder="Password"
+            name="password"
+            value=""
+            required
+          />
+        </div>
+        <div class="input-group">
+          <!-- Event listener added to the submit button -->
+          <button name="submit" class="btn">
+            <a href="./dashboard.html">
+              Login
+            </a>
+          </button>
+        </div>
+        <p class="login-register-text">
+          Don't have an account?
+          <!-- A link to the registration page for a new user -->
+          <a href="./register.html">Register Here</a>
+          .
+        </p>
+      </form>
+    </div>
+    <!-- Javascript direction -->
+    <script src="index.js"></script>
+  </body>
+</html>
